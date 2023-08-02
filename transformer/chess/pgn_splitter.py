@@ -63,7 +63,7 @@ class PGN_Splitter():
                             #logger.debug(f"Suche nächsten Header, {index}")
                     elif next_no_header == True and next_header == True:
                         if self.is_line_header(line) == True:
-                            logger.debug(f"Header gefunden, {index}")
+                            #logger.debug(f"Header gefunden, {index}")
                             # Erster Header nach  einem No Header, daher neues File
                             file_out.close()
                             logger.debug(f"File closed, {next_segment}, Line number: {total_index}")
